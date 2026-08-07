@@ -16,11 +16,11 @@ def main():
     if not api_key:
         print("Please set the GOOGLE_API_KEY environment variable.")
         sys.exit(1)
-
+    
     genai.configure(api_key=api_key)
 
     # Initialize the model
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-3.6-flash")
 
     prompt = (
         "Write a friendly welcome message for a developer who is starting a new Python project."
